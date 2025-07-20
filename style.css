@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #E6E6E6;
+    user-select: none;
+}
+#main{
+    width: 170px;
+    height: 230px;
+    background-color: #5A5D67;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+#display{
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #C1D799;
+    border-radius: 10px;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    letter-spacing: .7px;
+    color: white;
+}
+#button{
+    width: 100%;
+    height: calc(100% - 60px);
+    /* background-color: purple; */
+    display: flex;
+}
+#nums{
+    width: 73%;
+    /* background-color: green; */
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    /* gap: 10px; */
+    font-family:cursive;
+}
+.btn{
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    background-color: #3D4048;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    border: 1px solid rgba(255, 255, 255, 0.546);
+}
+.btn:hover{
+    box-shadow: 2px 2px 6px rgb(255, 251, 251);
+}
+#operator{
+    width: 27%;
+    /* background-color: rgb(106, 233, 106); */
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+     
+}
+.op-btn{
+     margin: auto;
+    width: 35px;
+    height: 35px;
+    background-color: #BDC0C8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    border: 1px solid rgb(22, 22, 22);
+    font-size: 1.3rem;
+}
+.op-btn:hover{
+    box-shadow: 2px 2px 6px rgb(11, 11, 11);
+}
+#equal{
+    /* width: 70px; */
+    /* border-radius: 5px; */
+    background-color: #BDC0C8;
+    font-size: 1.5rem;
+    text-align: center;
+}
